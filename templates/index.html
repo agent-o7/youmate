@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Downloader</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>YT / TikTok Downloader</h1>
+    <form id="downloadForm">
+      <label for="url">Video URL</label>
+      <input id="url" name="url" type="url" placeholder="https://..." required />
+
+      <div class="sources">
+        <label><input type="radio" name="source" value="youtube" checked /> YouTube</label>
+        <label><input type="radio" name="source" value="tiktok" /> TikTok</label>
+      </div>
+
+      <button type="submit">Start Download</button>
+    </form>
+
+    <div id="status">Idle</div>
+    <div id="result"></div>
+  </main>
+
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <script src="/static/main.js"></script>
+</body>
+</html>
