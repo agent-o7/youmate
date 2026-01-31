@@ -1,7 +1,7 @@
 # fly.toml app configuration file generated for youmate-fjrb4q on 2026-01-31T00:10:35Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+# fg
 
 app = 'youmate-fjrb4q'
 primary_region = 'ams'
